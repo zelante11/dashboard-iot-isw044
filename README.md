@@ -1,28 +1,24 @@
 # dashboard-iot-isw044
 
-Projeto desenvolvido em React utilizando StackBlitz.
+## Painel de Dados Externos
+
+Projeto React desenvolvido no StackBlitz.
 
 ## Funcionalidades
 
-- Componente SensorCard reutilizável
-- Uso de props
-- Uso de useState
-- Uso de useEffect
-- Atualização automática dos sensores a cada 3 segundos
-- Renderização de lista com .map()
-- Layout responsivo com flex-wrap
+- Consumo de API REST com fetch
+- Hook customizado useFetch
+- Reaproveitamento do hook em dois componentes
+- Estados de carregando, erro e sucesso
+- Atualização automática a cada 30 segundos
 - Teste automatizado com Vitest
 
-## Sensores
+## APIs utilizadas
 
-- Temperatura
-- Umidade
-- Luminosidade
-- CO₂
+- Open-Meteo
+- ViaCEP
 
-## Tecnologias
+## Executar testes
 
-- React
-- Vite
-- Vitest
-- Testing Library
+```bash
+npx vitest run
