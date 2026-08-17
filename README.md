@@ -1,32 +1,28 @@
-# React + TypeScript + Vite
+# dashboard-iot-isw044
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Projeto desenvolvido em React utilizando StackBlitz.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Componente SensorCard reutilizável
+- Uso de props
+- Uso de useState
+- Uso de useEffect
+- Atualização automática dos sensores a cada 3 segundos
+- Renderização de lista com .map()
+- Layout responsivo com flex-wrap
+- Teste automatizado com Vitest
 
-## React Compiler
+## Sensores
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Temperatura
+- Umidade
+- Luminosidade
+- CO₂
 
-## Expanding the Oxlint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- React
+- Vite
+- Vitest
+- Testing Library
